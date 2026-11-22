@@ -49,15 +49,6 @@ Each line has an **Open** button that jumps to the asset.
   invulnerability and speed up.
 - **Waves**: a normal room with *Enemy waves* > 1 spawns the next wave after the previous one is beaten.
 
-## Automated tests
-
-The package ships EditMode tests (`Assets/DungeonShooterMaker/Tests`): the content loads cleanly and every asset
-passes its check, exporting to JSON and loading it back gives the same content, generated floors are fully connected,
-and saved progress survives reloads and broken files.
-
-Run them from **Window > General > Test Runner** (EditMode) or **Tools > Dungeon Shooter Maker > Advanced > Run
-Tests**. Run them after editing content to catch broken references early.
-
 ## Troubleshooting
 
 ### My content does not load, or the game skips an entry

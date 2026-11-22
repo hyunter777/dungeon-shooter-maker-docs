@@ -27,7 +27,8 @@ A built game also reads JSON from `Application.persistentDataPath/content/` (or 
 `-content <dir>`): files there **override** default content by id, so players can mod your game without Unity.
 
 Folder names: `guns, enemies, rooms, floors, items, statuses, loot, chests, shops, shrines, characters, synergies`
-plus `ruleset.json`. The field reference is in `docs/SCHEMA.md`.
+plus `ruleset.json`. To see every field, export the sample with **Export JSON…**: the files use the same names as
+the editors.
 
 ## Elites and mini-bosses
 
@@ -182,8 +183,9 @@ Assets/DungeonShooterMaker/
   Documentation/  this guide
 ```
 
-All default art is generated from small pixel maps in code (`Art.cs`, `ItemArt.cs`, `HazardArt`), so the package has
-no texture dependencies. Replace sprites by editing those maps or by assigning your own sprites in code.
+Heroes, enemies, guns, effects and the game UI frames are sprite sheets (Content/Default and Resources). Floors, walls,
+props and some items and hazards are drawn from small pixel maps in code (`Art.cs`, `ItemArt.cs`, `HazardArt`).
+Any of them can be replaced from the sprite slots in the editors.
 
 ## Next
 

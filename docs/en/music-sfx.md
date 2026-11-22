@@ -19,7 +19,7 @@ phase → boss/mini-boss → room → room type → floor → default
 ```
 
 Changes crossfade, the music ducks under the pause menu and offers and while a stinger plays. An id with no asset is
-silence. **No tracks ship:** the sample is silent until you add them.
+silence. The sample ships 10 looping tracks and 5 stingers (`Content/Default/Music`); replace them or add your own.
 
 ## Sounds
 

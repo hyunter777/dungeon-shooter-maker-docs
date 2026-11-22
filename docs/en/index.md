@@ -8,8 +8,8 @@ and tested with one click.
 
 ## What ships with the package
 
-The package ships with a complete sample game: **4 floors, 4 heroes, 10 guns, 14 items, 7 enemies with a 3-phase
-boss, 8 synergies, chests, a shop and 7 shrines**. Change it, or use it as a reference for your own game.
+The package ships with a complete sample game: **4 floors and a camp lobby, 4 heroes, 16 guns, 24 items, 12 enemies
+and 6 bosses, 12 synergies, 38 upgrades, 33 rooms, chests, shops and shrines**. Change it, or use it as a reference for your own game.
 
 Everything is a ScriptableObject asset in `Assets/DungeonShooterMaker/Content/Default/` and is listed in the
 **Content Database** (`Resources/DungeonShooterMaker/DefaultContent`). Editors create, rename, duplicate and delete
@@ -27,8 +27,8 @@ those assets for you and keep the database list up to date.
 ## Tested environment
 
 - Unity 6 (the sample project is on **6000.0.47f1**) with the Universal Render Pipeline (**URP 17.0.4**).
-- The game uses no texture dependencies: all default art is generated from small pixel maps in code. Your own
-  sprites are optional (see [Your own art](editors.md#your-own-art)).
+- Heroes, enemies, guns, effects and UI frames ship as sprite sheets; floors, walls and props are drawn from small
+  pixel maps in code. Your own sprites are optional (see [Your own art](editors.md#your-own-art)).
 - Game text uses the pixel font **Galmuri** (Galmuri7, Galmuri9, Galmuri11 Bold, English and Korean), which may ship
   with your game under the SIL Open Font License. See [Support and licenses](support.md).
 

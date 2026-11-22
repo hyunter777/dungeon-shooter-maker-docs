@@ -29,7 +29,7 @@ Dungeon Shooter Maker is distributed on the Unity Asset Store, so its use is gov
 [Standard Unity Asset Store EULA](https://unity.com/legal/as-terms). Third-party components retain their listed
 licenses; the full texts are in the package's `Third-Party Notices.md` and in the files it names.
 
-The sample game (4 floors, 4 heroes, 10 guns, 14 items, 7 enemies, chests, a shop, 7 shrines) is part of the package
+The sample game (4 floors, 4 heroes, 16 guns, 24 items, 12 enemies and 6 bosses, chests, shops and shrines) is part of the package
 and is meant to be edited or used as a reference for your own game.
 
 ## Third-party credits
