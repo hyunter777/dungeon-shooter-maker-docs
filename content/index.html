@@ -1165,7 +1165,8 @@ delete these assets for you and keep the database list up to date.</p>
 <p>A built game also reads JSON from <code>Application.persistentDataPath/content/</code> (or a folder passed with
 <code>-content &lt;dir&gt;</code>): files there <strong>override</strong> default content by id, so players can mod your game without Unity.</p>
 <p>Folder names: <code>guns, enemies, rooms, floors, items, statuses, loot, chests, shops, shrines, characters, synergies</code>
-plus <code>ruleset.json</code>. The field reference is in <code>docs/SCHEMA.md</code>.</p>
+plus <code>ruleset.json</code>. To see every field, export the sample with <strong>Export JSON…</strong>: the files use the same names as
+the editors.</p>
 <h2 id="elites-and-mini-bosses">Elites and mini-bosses<a class="headerlink" href="#elites-and-mini-bosses" title="Permanent link">&para;</a></h2>
 <h3 id="elite-modifiers">Elite modifiers<a class="headerlink" href="#elite-modifiers" title="Permanent link">&para;</a></h3>
 <p>An <em>elite</em> is a normal enemy that spawns with one modifier, made in <strong>Tools &gt; Dungeon Shooter Maker &gt; Enemy Modifier
@@ -1286,8 +1287,9 @@ clipboard for a spreadsheet.</p>
   Demo/           the demo scene (play mode starts here)
   Documentation/  this guide
 </code></pre></div>
-<p>All default art is generated from small pixel maps in code (<code>Art.cs</code>, <code>ItemArt.cs</code>, <code>HazardArt</code>), so the package has
-no texture dependencies. Replace sprites by editing those maps or by assigning your own sprites in code.</p>
+<p>Heroes, enemies, guns, effects and the game UI frames are sprite sheets (Content/Default and Resources). Floors, walls,
+props and some items and hazards are drawn from small pixel maps in code (<code>Art.cs</code>, <code>ItemArt.cs</code>, <code>HazardArt</code>).
+Any of them can be replaced from the sprite slots in the editors.</p>
 <h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../editors/">The editors</a> — every window and the effect-block system.</li>

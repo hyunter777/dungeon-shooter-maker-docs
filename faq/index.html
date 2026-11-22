@@ -691,17 +691,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automated tests
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -976,17 +965,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Automated tests
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1214,12 +1192,6 @@ happened (items picked, patterns fired, synergies, loot).</p>
   invulnerability and speed up.</li>
 <li><strong>Waves</strong>: a normal room with <em>Enemy waves</em> &gt; 1 spawns the next wave after the previous one is beaten.</li>
 </ul>
-<h2 id="automated-tests">Automated tests<a class="headerlink" href="#automated-tests" title="Permanent link">&para;</a></h2>
-<p>The package ships EditMode tests (<code>Assets/DungeonShooterMaker/Tests</code>): the content loads cleanly and every asset
-passes its check, exporting to JSON and loading it back gives the same content, generated floors are fully connected,
-and saved progress survives reloads and broken files.</p>
-<p>Run them from <strong>Window &gt; General &gt; Test Runner</strong> (EditMode) or <strong>Tools &gt; Dungeon Shooter Maker &gt; Advanced &gt; Run
-Tests</strong>. Run them after editing content to catch broken references early.</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
 <h3 id="my-content-does-not-load-or-the-game-skips-an-entry">My content does not load, or the game skips an entry<a class="headerlink" href="#my-content-does-not-load-or-the-game-skips-an-entry" title="Permanent link">&para;</a></h3>
 <p>That is the designed behaviour: the game never loads broken data, reports the problem and skips that entry. The
