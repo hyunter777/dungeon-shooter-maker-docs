@@ -25,9 +25,9 @@ product availability.
 
 Dungeon Shooter Maker — Copyright (c) 2026 FlyCat. All rights reserved.
 
-The Unity Asset Store package is licensed under the [Standard Unity Asset Store EULA](https://unity.com/legal/as-terms).
-Third-party components retain their listed licenses; the package's `Documentation/Third-Party Notices.md` and
-`Documentation/LICENSE.md` hold the full texts.
+Dungeon Shooter Maker is distributed on the Unity Asset Store, so its use is governed by the
+[Standard Unity Asset Store EULA](https://unity.com/legal/as-terms). Third-party components retain their listed
+licenses; the full texts are in the package's `Third-Party Notices.md` and in the files it names.
 
 The sample game (4 floors, 4 heroes, 10 guns, 14 items, 7 enemies, chests, a shop, 7 shrines) is part of the package
 and is meant to be edited or used as a reference for your own game.
