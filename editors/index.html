@@ -1,0 +1,1272 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="English manual for the Unity toolkit that makes top-down, room-by-room dungeon shooters from data.">
+      
+      
+      
+        <link rel="canonical" href="https://hyunter777.github.io/dungeon-shooter-maker-docs/editors/">
+      
+      
+        <link rel="prev" href="../quick-start/">
+      
+      
+        <link rel="next" href="../run-rules/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>The editors - Dungeon Shooter Maker</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../assets/styles.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-editors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Dungeon Shooter Maker" class="md-header__button md-logo" aria-label="Dungeon Shooter Maker" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dungeon Shooter Maker
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The editors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/hyunter777/dungeon-shooter-maker-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Dungeon Shooter Maker" class="md-nav__button md-logo" aria-label="Dungeon Shooter Maker" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dungeon Shooter Maker
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/hyunter777/dungeon-shooter-maker-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start here
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Start here
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Making your game
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Making your game
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The editors
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The editors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-each-window-makes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What each window makes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-own-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your own art
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Your own art">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motion-sheets-pixel-legion-maker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion sheets (Pixel Legion Maker)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secret-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret rooms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawn-floor-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drawn floor plans
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-blocks-when-if-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effect blocks: WHEN → IF → DO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-own-effects-in-c-no-editor-changes-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your own effects in C# (no editor changes needed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../run-rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Run rules and progression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../content/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Content and gameplay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../music-sfx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Music and sound
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Help
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Help
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ and troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support and licenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-each-window-makes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What each window makes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-own-art" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your own art
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Your own art">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motion-sheets-pixel-legion-maker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Motion sheets (Pixel Legion Maker)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secret-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret rooms
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawn-floor-plans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drawn floor plans
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-blocks-when-if-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effect blocks: WHEN → IF → DO
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-own-effects-in-c-no-editor-changes-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Your own effects in C# (no editor changes needed)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-editors">The editors<a class="headerlink" href="#the-editors" title="Permanent link">&para;</a></h1>
+<p>Every kind of content has its own window. This page lists what each one makes and then covers the parts they share:
+your own art, room layouts and secret rooms, drawn floor plans, effect blocks, and your own effects in C#.</p>
+<!-- TODO(screenshot): the Project Overview card grid, saved as assets/images/overview.png -->
+
+<h2 id="what-each-window-makes">What each window makes<a class="headerlink" href="#what-each-window-makes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Editor</th>
+<th>What you make</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Run Rules</strong></td>
+<td>Player basics (hearts, speed, roll), room-clear rewards and chest chance, shop prices, traps, curse/flair, hexed enemies, default hero, and OFFERS: which offer opens after a boss (instead of its loot, keeping its hearts, or as well), after a whole floor is cleared, or by chance after a room. LOBBY: the lobby floor and how many starting guns and items the loadout station adds.</td>
+</tr>
+<tr>
+<td><strong>Heroes</strong></td>
+<td>Playable characters: helmet/suit colors, hearts, speed, starting guns/items/keys/coins, extra stats. Two or more heroes turn on the hero select screen.</td>
+</tr>
+<tr>
+<td><strong>Guns</strong></td>
+<td>Fire mode (semi, auto, burst, charge), clip and ammo, spread, projectiles, bounce/pierce/homing/split/explode modifiers, status effects, effect blocks while held, quality and price, tags (e.g. <code>pistol, ballistic</code>) that gun upgrades and the <code>gun_has_tag</code> condition read. Live preview.</td>
+</tr>
+<tr>
+<td><strong>Items</strong></td>
+<td>Passive items (22 stats, <em>mul</em> and <em>add</em>), effect blocks (see below), and active items with rooms/seconds/damage recharge.</td>
+</tr>
+<tr>
+<td><strong>Synergies</strong></td>
+<td>"Holding A + B (+ any N of C, D, E) gives bonus stats and reactions." Announced in game with a SYNERGY! banner.</td>
+</tr>
+<tr>
+<td><strong>Status Effects</strong></td>
+<td>Burn, poison, freeze, chill, shock and your own: damage over time, slow, stacking, duration.</td>
+</tr>
+<tr>
+<td><strong>Enemies &amp; Bosses</strong></td>
+<td>States with movement (chase, keep range, hop, dash, teleport, orbit, wander, still) and bullet patterns (aimed, radial, random, line, summon) with repeat/rotation (spirals), acceleration, curving, wave and homing. Bosses add HP-threshold phases and an intro card. The <strong>LIVE PATTERN</strong> preview plays your pattern in the window; 9 presets get you started. <em>Elite chance ×</em> says whether this enemy can spawn as an elite.</td>
+</tr>
+<tr>
+<td><strong>Elite Modifiers</strong></td>
+<td>One elite prefix per enemy: health/speed/fire-delay/damage multipliers, extra bullet patterns (add to or replace the state's volleys), an aura of effect blocks, a sprite tint (outline colour/width are hooks), extra coins, hearts and loot, an appear animation and the default weight/floor range for elite pools. See <a href="../content/#elites-and-mini-bosses">Elites and mini-bosses</a>.</td>
+</tr>
+<tr>
+<td><strong>Crosshairs</strong></td>
+<td>Aim marker looks: sprite slot or a drawn shape (cross, ring, tee, brackets), hotspot, tint, scale, spin, recoil/recovery, hide the system cursor. Run Rules picks one; a gun can name its own.</td>
+</tr>
+<tr>
+<td><strong>Music</strong></td>
+<td>Tracks by id: a loop clip (optionally an intro), volume and loop points. Run Rules, floors, rooms, bosses and phases pick them by id; an id with no asset is silence. See <a href="../music-sfx/">Music and sound</a>.</td>
+</tr>
+<tr>
+<td><strong>Sounds</strong></td>
+<td>Sounds by id with one or more clips (one picked at random), volume and pitch variation. The 19 game sounds ship with recorded defaults; any id without a Sound asset uses the built-in generated sound. ▶ plays it.</td>
+</tr>
+<tr>
+<td><strong>Effect Animations</strong></td>
+<td>Animations from a sprite sheet or cut sprites: one-shot effects and looping ones (bullets, statuses). Run Rules pick one per event (34 events: shots, bullets in flight, hits, bounces, hurt, heal, death, teleport, summon, boss phase, pickups, chests, shrines, synergies, secret walls, events); guns, enemy attacks, enemies and status effects can pick their own. 42 defaults made with Pixel VFX Maker; only shell casings and dash dust are small code particles.</td>
+</tr>
+<tr>
+<td><strong>Props</strong></td>
+<td>Room props placed with one layout character: solid, bullet cover, breakable (health, loot drops, break effect blocks), flippable cover (one side stops bullets), or an exploding barrel. The four old props (T table, P pillar, O pot, X barrel) are built in.</td>
+</tr>
+<tr>
+<td><strong>Rooms</strong></td>
+<td>Paint layouts: walls of props, enemy spawns, boss and chest spots, spike traps (S), explosive barrels (X). Room type (start, normal, treasure, shop, boss, miniboss, shrine, event, secret, lobby), weight, floor range, enemy waves, and an extra elite chance. Lobby rooms add station spots 1-9, the exit hatch G and a stations table; mini-boss rooms take a spawn point (B), one forced enemy and their add waves.</td>
+</tr>
+<tr>
+<td><strong>Floors</strong></td>
+<td>Generated (room count, number of treasure/shrine/event/mini-boss/secret rooms, shop chance) or <strong>drawn by hand</strong> on a grid: pick a room kind, click squares, click between two rooms to join them. Enemy pool with weights per floor, boss pool, treasure chest, shop, boss loot, secret room loot, tile colors or your own floor and wall tiles. The preview shows each floor's enemy odds. <em>Lobby</em> turns a floor into the place between runs (only its look and name are used).</td>
+</tr>
+<tr>
+<td><strong>Loot Tables</strong></td>
+<td>Weighted entries (gun, item, coins, heart, ammo, key, purge, chest, nothing) with quality ranges, rolls, no-duplicates option. Used by chests, bosses, mimics and shrine challenges.</td>
+</tr>
+<tr>
+<td><strong>Chests</strong></td>
+<td>Quality, color, key cost, loot table, mimic chance and enemy, chance to break.</td>
+</tr>
+<tr>
+<td><strong>Shops</strong></td>
+<td>Shelf slots (kind + quality range or a fixed id) and a price multiplier. Prices come from Run Rules.</td>
+</tr>
+<tr>
+<td><strong>Shrines</strong></td>
+<td>Cost (coins, hearts, heart containers, keys, purges, curse, free), then instant effects (all or one at random), a lasting blessing, an item, or a challenge fight that drops a loot table.</td>
+</tr>
+<tr>
+<td><strong>Events</strong></td>
+<td>Someone to talk to in an event room: speaker name, color or your own sprite, pages of text and choices. A choice can need something (conditions, shown greyed out or hidden), cost coins/health/keys/curse, work by chance, run effect blocks, give an item or loot, start a fight, show a result line and go to another page. When the talk ends the speaker leaves, stays silent, or can be talked to again. Floors set how many event rooms they have.</td>
+</tr>
+<tr>
+<td><strong>Currencies</strong></td>
+<td>Coins and keys come built in; add your own (scrap, gems...). Name, short word in prices, icon (shape + color or your own sprite), pickup sound, HUD on/off and order, start amount, carry limit. Shop slots, shrines, event choices, chest locks and offer rerolls can cost any currency. PERSISTENCE: <em>Kept between runs</em> makes a persistent currency (start balance of a new save, bonuses per boss, new floor and won run); a run currency can carry a percent of what was earned or held into one. See <a href="../run-rules/#between-runs">Between runs</a>.</td>
+</tr>
+<tr>
+<td><strong>Offers</strong></td>
+<td>Pick-N-of-M reward screens: how many cards are shown and picked, a weighted pool of rewards (perk, gun upgrade, item or gun by quality, a stat change, currency, healing, heart containers), reroll price (+ step, max) in any currency, and what skipping gives. Cards the hero can't use (a perk at its top level, an upgrade no held gun fits) are left out. ▶ Try this offer opens it in a test room. Run Rules open offers after a boss, when every fight room of a floor is cleared, or by chance after a room; shrines, events and items open them with the <code>offer</code> effect.</td>
+</tr>
+<tr>
+<td><strong>Upgrades</strong></td>
+<td>Hero <strong>perks</strong> (for the rest of the run) and <strong>gun upgrades</strong> (on one gun: any gun, one gun, or every gun with a tag). Each level adds stats and effect blocks on top of the levels before it. Weight and first floor for random picks. Taken perks show in the HUD tray with their level; upgraded guns show <code>+N</code> next to their name and in the pause screen. <strong>Meta upgrades</strong> are bought in the lobby with a persistent currency and apply to every run: requirements (a talent tree), group (shop column) and order, a price and the content each level opens. The preview shows the whole meta shop.</td>
+</tr>
+<tr>
+<td><strong>Difficulties</strong></td>
+<td>Levels the player picks on the hero screen (▲ ▼): enemy health (also per floor and for bosses), speed, fire rate, bullet damage, extra enemies per wave, elite chance, shop prices and the hero's own stats. The first open one is the default.</td>
+</tr>
+<tr>
+<td><strong>Unlocks</strong></td>
+<td>Goals counted over all runs (runs played or won, best floor, enemies, bosses, coins, a win with a hero or on a difficulty) that open locked content: guns, items, heroes, difficulties, events, chests, shrines. Locked content never drops or shows up. The editor also shows and resets the save used when testing in the editor.</td>
+</tr>
+</tbody>
+</table>
+<p>Every list editor has <strong>New / Duplicate / Delete / Ping</strong>, a search box, and a preview panel on the right.</p>
+<h2 id="your-own-art">Your own art<a class="headerlink" href="#your-own-art" title="Permanent link">&para;</a></h2>
+<p>Guns, bullets, enemies, heroes, items and chests have a <strong>Your sprite</strong> slot. Leave it empty to keep the built-in
+art. Fill it with a sprite sheet (PNG, set the frame width/height; frames run left to right, top to bottom) or a list
+of cut sprites. More than one frame plays as an animation (enemies and heroes walk, bullets spin). Art is drawn
+facing right at 16 pixels per tile whatever the import settings; the pivot is the point that sits on the object's
+position. Your art keeps its own colors (the built-in shapes are tinted). There is no drawing tool: use your usual
+pixel editor.</p>
+<p>A gun sprite can give its <strong>Grip point</strong> (held in the hero's hand) and <strong>Muzzle point</strong> (where bullets and the muzzle
+animation leave), in pixels from the sprite's top-left; -1 keeps the sprite's pivot as the grip and fires from just in
+front of the hero. Guns drawn at 32 pixels per unit (set it in the slot) look big and chunky in hand.</p>
+<h3 id="motion-sheets-pixel-legion-maker">Motion sheets (Pixel Legion Maker)<a class="headerlink" href="#motion-sheets-pixel-legion-maker" title="Permanent link">&para;</a></h3>
+<p>Heroes and enemies can also use a motion sheet: one row per motion, with a <code>.json</code> beside the PNG naming each row
+(<code>idle</code>, <code>running</code>, <code>attack</code>, <code>damaged</code>, <code>death</code>; <code>fps</code>, <code>frameWidth</code>, <code>frameHeight</code>, and the feet point <code>originX</code> /
+<code>groundPx</code>). Pixel Legion Maker writes exactly this with every hero export (<code>Exports/Heroes/HERO_name.png</code> + <code>.json</code>):
+drop the PNG in <strong>Sheet</strong> and the motions, 32 pixels per unit and the left-facing flag fill in.</p>
+<p>The game plays idle/running from movement, attack when firing, damaged when hit and death before the body fades; a
+hero's <code>roll</code> row plays during the dodge roll (the gun is put away). Missing motions fall back (running → walk →
+idle). The two crowned bosses were made with Pixel Legion Maker; for heroes, export without a weapon so they hold
+the game's gun.</p>
+<p>A hero sheet can say where the gun hand is: <code>handX</code> / <code>handY</code> (pixels from a frame's top-left, drawn facing as the
+sheet faces), and per row <code>handX</code> / <code>handY</code> lists (one point per frame, -1 = the sheet's point) so the gun follows the
+arm. Any sheet works the same way if you write the <code>.json</code> by hand. <em>Low-res render</em> mode draws 32-pixel art at the
+game's 16-pixel grid, so fine detail is lost there.</p>
+<p><strong>Effects (Pixel VFX Maker).</strong> Drop a Pixel VFX Maker export (<code>name.png</code> with <code>name.sheet.json</code> beside it) in any
+sheet slot and the frame size, count, speed, looping and pivot fill in.</p>
+<p>Floors take <strong>floor tiles</strong> and <strong>wall tiles</strong> the same way: 16x16 px each. With several frames the first is the
+plain tile (used half the time) and the others are mixed in at random. Textures don't need Read/Write enabled.</p>
+<h2 id="secret-rooms">Secret rooms<a class="headerlink" href="#secret-rooms" title="Permanent link">&para;</a></h2>
+<p>A secret room sits behind a faintly cracked wall. Any explosion near the wall (a bomb item, an explosive bullet, a
+barrel) opens it: the doorway and its corridor appear and the room shows on the map. Inside is a random chest, or the
+floor's <em>secret room loot</em> spilled when it opens. Generated floors place <em>Secret rooms</em> of them next to plain or
+special rooms (never the start or the boss room); in a drawn plan, a <code>?</code> room joined to a room is secret.</p>
+<h2 id="drawn-floor-plans">Drawn floor plans<a class="headerlink" href="#drawn-floor-plans" title="Permanent link">&para;</a></h2>
+<p>A drawn plan is saved as text in the floor (JSON: <code>layout</code>), one string per row. Rooms sit on even positions, <code>-</code>
+joins rooms sideways and <code>|</code> up and down:</p>
+<div class="highlight"><pre><span></span><code>S-N-N
+| | |
+? T-B
+  |
+  E
+</code></pre></div>
+<p><code>S</code> start, <code>N</code> fight, <code>B</code> boss, <code>T</code> treasure, <code>$</code> shop, <code>H</code> shrine, <code>E</code> event (a fight when no event fits), <code>?</code>
+secret. Plans also use <code>C</code> for challenge rooms and <code>M</code> for mini-boss rooms.</p>
+<p>A plan needs one start and one boss, every room joined, and the boss reachable without secret rooms. A broken plan is
+reported by the Floor Editor and Project Check, and the floor is generated instead until it is fixed.</p>
+<p><code>Tools &gt; Dungeon Shooter Maker &gt; Advanced &gt; Rebuild Default Sounds and Effects</code> recreates the default Sound and
+Effect assets from <code>Sounds/Default</code> and <code>Vfx/Default</code> (your own assets are left alone).</p>
+<h2 id="effect-blocks-when-if-do">Effect blocks: WHEN → IF → DO<a class="headerlink" href="#effect-blocks-when-if-do" title="Permanent link">&para;</a></h2>
+<p>Items, synergies, guns (while held), shrines and boss phases share one system.</p>
+<p><strong>WHEN</strong> an event happens: <code>room_clear</code>, <code>kill</code>, <code>hit</code> (a player bullet hits an enemy), <code>damaged</code>, <code>roll</code>, <code>purge</code>,
+<code>reload</code>, <code>shot</code>, <code>room_enter</code>, <code>floor_start</code>, <code>pickup</code> (items only), <code>offer_picked</code> (a card was taken on an offer
+screen), <code>run_start</code> (once, after the hero, starting gear and meta upgrades are applied). <em>Chance</em> and <em>Every Nth</em>
+thin it out; <em>Every Nth</em> counts only events whose conditions passed. Elites add <code>boss_kill</code>, <code>miniboss_kill</code> and
+<code>elite_kill</code> (see <a href="../content/#elites-and-mini-bosses">Elites and mini-bosses</a>).</p>
+<p><strong>IF</strong> every condition passes (each can be flipped with <strong>NOT</strong>): <code>hp_below</code>, <code>hp_full</code>, <code>coins_at_least</code>,
+<code>keys_at_least</code>, <code>has</code> (a gun or item), <code>boss_room</code>, <code>enemies_at_least</code>, <code>clip_empty</code>, <code>floor_at_least</code>,
+<code>stat_at_least</code>, <code>event_boss</code>, <code>upgrade_level</code> (a perk, or a gun upgrade on the current gun, at least level N),
+<code>gun_has_tag</code>, <code>currency_at_least</code>.</p>
+<p><strong>DO</strong> the effects. Effects that pick enemies or a place have a <strong>Target</strong>: <code>event</code> (the enemy that was hit or
+killed), <code>nearest</code>, <code>random</code>, <code>all</code>, <code>player</code>, or <code>source</code> (the boss, in phase effects). If the event's enemy already
+died (a killing hit), <code>event</code> picks nobody. Effects: heal, max_hp, coins, keys, purges, ammo, reload, invulnerable,
+damage, damage_room, status, status_room, explode, bullet_ring, clear_bullets, toast, <code>offer</code> (opens an offer screen),
+<code>upgrade_gun</code> and <code>grant_perk</code> (a named or random one), <code>currency</code> (gives any currency), <code>grant_item</code> (a named item,
+or a random one when empty), <code>grant_gun</code> (a named gun).</p>
+<p>Boss phases offer only effects that work from a boss: bullet_ring and explode (hurt the player), damage (hurts the
+player), heal (the boss), clear_bullets, toast.</p>
+<p>Examples in the default content: <em>Static Coil</em> (WHEN hit, 20% → shock the enemy that was hit), <em>Last Stand Locket</em>
+(WHEN entering a room IF below 2 hearts → 3 s invulnerable + "LAST STAND"), <em>Old Iron</em> (WHEN reloading IF the clip is
+empty → ring of 8 bullets), <em>Gale Vulture</em> phase 2 (a ring of 16 bullets from the boss).</p>
+<p>Effects never start more events while they run, and bullets made by effects never count as <code>hit</code>, so blocks cannot
+loop forever.</p>
+<h2 id="your-own-effects-in-c-no-editor-changes-needed">Your own effects in C# (no editor changes needed)<a class="headerlink" href="#your-own-effects-in-c-no-editor-changes-needed" title="Permanent link">&para;</a></h2>
+<p>Write a class with a parameterless constructor that implements <code>IEffectType</code>, <code>IConditionType</code> or <code>ITriggerType</code>
+anywhere in your project. It is found automatically and its id appears in every effect, condition and event
+dropdown. See <code>Demo/Extensions/ExampleExtensions.cs</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">ChainZapEffect</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IEffectType</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Id</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">"chain_zap"</span><span class="p">;</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Uses</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s">"amount damage to the target, then jumps to count more enemies within radius"</span><span class="p">;</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">DefaultTarget</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">Target</span><span class="p">.</span><span class="n">Event</span><span class="p">;</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">SupportsHostile</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">false</span><span class="p">;</span><span class="w"> </span><span class="c1">// true = also offered in boss phases (ctx.Hostile: hurt the player)</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Run</span><span class="p">(</span><span class="n">ItemEffectDef</span><span class="w"> </span><span class="n">e</span><span class="p">,</span><span class="w"> </span><span class="n">EffectContext</span><span class="w"> </span><span class="n">ctx</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ctx.Enemies(e.target, Target.Event), ctx.Player, ctx.Point ... */</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><code>EffectContext</code> gives the player, the event's enemy, the event point, the room and <code>Enemies(target)</code> /
+<code>PointOf(target)</code>. Fire your own event from any script with <code>EffectLibrary.FireTrigger("my_event")</code>. Ids must be
+unique; clashes are listed by <strong>Project Check</strong>.</p>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../run-rules/">Run rules and progression</a> — the numbers behind rewards, offers, elites and the lobby.</li>
+<li><a href="../content/">Content and gameplay</a> — modifiers, mini-bosses, props, pits, gates, challenge rooms and languages.</li>
+<li><a href="../music-sfx/">Music and sound</a> — tracks, sounds and effect animations.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../quick-start/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick start">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Quick start
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../run-rules/" class="md-footer__link md-footer__link--next" aria-label="Next: Run rules and progression">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Run rules and progression
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2026 FlyCat
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.flycat.co.kr" target="_blank" rel="noopener" title="FlyCat" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M351.9 280H161c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zm-191-48h190.9c-2.8-64.5-17.1-123.9-37.4-167.4-11.4-24.4-23.7-41.8-35.1-52.4C268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4m-48 0c3.5-85.6 25.6-165.1 57.9-217.3C78.7 47.3 10.9 131.2 1.5 232zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3zm111.4-48C501.9 131.2 434.1 47.3 342 14.7c32.3 52.2 54.4 131.7 57.9 217.3z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/hyunter777/dungeon-shooter-maker-docs/discussions/categories/q-a" target="_blank" rel="noopener" title="Q&amp;A" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
