@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible problem in Dungeon Shooter Maker.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For usage questions, use [Q&A](https://github.com/hyunter777/dungeon-shooter-maker-docs/discussions/categories/q-a).
+        This is a public form. Do not attach the purchased package, source code, paid assets, fonts, credentials or private information.
+  - type: input
+    id: product-version
+    attributes:
+      label: Dungeon Shooter Maker version
+    validations:
+      required: true
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity Editor version
+      placeholder: e.g. 6000.0.47f1
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Render pipeline and operating system
+      placeholder: e.g. URP 17, Windows 11
+    validations:
+      required: true
+  - type: input
+    id: content
+    attributes:
+      label: Content id, editor window or test room (if relevant)
+      placeholder: e.g. gun 'plasma_smg', Floor Editor, -testroom miniboss
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal steps starting from a new project or the sample game.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Relevant Console messages or screenshots
+      description: Redact private paths and personal data. Do not attach the purchased package or source.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Public content check
+      options:
+        - label: I removed private information and did not attach product source, paid assets, packages or fonts.
+          required: true

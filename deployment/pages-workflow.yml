@@ -1,0 +1,35 @@
+# Dormant template. Activate only after publisher approval and initial setup.
+# Uses the same legacy gh-pages / source as the publishing script.
+name: Publish documentation
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: documentation-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Synchronize documentation and publish gh-pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote set-url origin https://github.com/hyunter777/dungeon-shooter-maker-docs.git
+          git pull --rebase --autostash origin main
+          python scripts/deploy_pages.py --approved
+# Pages/Homepage and Discussions are configured separately, once, after approval.
+# Deployment from Actions may require an approved credential capable of triggering
+# branch-based Pages builds; a GITHUB_TOKEN push alone may not trigger that build.
+# Prefer the local publishing script for the initial verified publication.

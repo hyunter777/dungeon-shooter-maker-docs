@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage questions (Q&A)
+    url: https://github.com/hyunter777/dungeon-shooter-maker-docs/discussions/categories/q-a
+    about: Ask how to build, edit or test your dungeon shooter. Mark helpful answers as accepted.
+  - name: Documentation
+    url: https://hyunter777.github.io/dungeon-shooter-maker-docs/
+    about: Read the quick start, editor guide, run rules and FAQ.
+  - name: Publisher website
+    url: https://www.flycat.co.kr
+    about: Publisher information and contact details.
